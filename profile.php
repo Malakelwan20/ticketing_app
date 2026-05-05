@@ -31,7 +31,5 @@ render_page('pages/profile', array(
     'user' => $user,
     'bookings' => $bookings,
     'initials' => $initials,
-    'success' => isset($_GET['success']) ? $_GET['success'] : '',
-    'error' => isset($_GET['error']) ? $_GET['error'] : '',
     'total_spent' => array_sum(array_column($bookings, 'total_price'))
 ));

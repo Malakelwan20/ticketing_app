@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/includes/config.php';
 
-$allowed_categories = array('Concert', 'Theater', 'Sports', 'Other');
+$allowed_categories = array('Concert', 'Theater', 'Sports');
 $category = null;
 
 if (isset($_GET['category']) && in_array($_GET['category'], $allowed_categories)) {
